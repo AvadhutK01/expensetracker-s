@@ -44,12 +44,12 @@ submit.addEventListener("click", (e => {
         let td1 = document.createElement("td");
         td1.id = "td1";
         td1.setAttribute("attr", inforparsed["amount"]);
-        td1.appendChild(document.createTextNode(inforparsed["amount"] + " "));
+        td1.appendChild(document.createTextNode(inforparsed["amount"]));
         tr.appendChild(td1);
         let td2 = document.createElement("td");
         td2.id = "td2";
         td2.setAttribute("attr", inforparsed["category"]);
-        td2.appendChild(document.createTextNode(inforparsed["category"] + " "));
+        td2.appendChild(document.createTextNode(inforparsed["category"]));
         tr.appendChild(td2);
         let td3 = document.createElement("td");
         td3.id = "td3";
