@@ -1,0 +1,10 @@
+const express = require('express');
+const datacontroller = require('../controllers/datacontroller');
+let route = express.Router();
+route.get("/", datacontroller.getIndex);
+route.post("/post-data", datacontroller.postData);
+route.get("/getdata", datacontroller.getData);
+route.post("/delete-user", datacontroller.deleteExpense);
+route.post("/getdatasingle", datacontroller.getSingleData);
+route.post("/editdata", datacontroller.updateData);
+module.exports = route;
